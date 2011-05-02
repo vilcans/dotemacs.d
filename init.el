@@ -4,4 +4,5 @@
 
 (setq-default indent-tabs-mode nil)
 (setq-default inhibit-startup-screen t)
-(tool-bar-mode -1)
+
+(if (boundp 'tool-bar-mode) (tool-bar-mode -1))
