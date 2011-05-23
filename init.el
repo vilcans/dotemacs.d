@@ -11,3 +11,6 @@
 ;; This may cause a lot of network traffic for files on network mounts:
 ;; http://www.emacswiki.org/emacs/RevertBuffer#toc2
 (global-auto-revert-mode 1)
+
+(column-number-mode 1)
+
