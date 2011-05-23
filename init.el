@@ -2,6 +2,8 @@
 (add-to-list 'auto-mode-alist '("\\.js\\'" . javascript-mode))
 (autoload 'javascript-mode "javascript" nil t)
 
+(setq-default sentence-end-double-space nil)
+
 (setq-default indent-tabs-mode nil)
 (setq-default inhibit-startup-screen t)
 (if (boundp 'tool-bar-mode) (tool-bar-mode -1))
