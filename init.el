@@ -5,6 +5,8 @@
 (autoload 'markdown-mode "markdown-mode.el" "Major mode for editing Markdown files" t)
 (setq auto-mode-alist (cons '("\\.markdown" . markdown-mode) auto-mode-alist))
 
+(setq-default sentence-end-double-space nil)
+
 (setq-default indent-tabs-mode nil)
 (setq-default inhibit-startup-screen t)
 (if (boundp 'tool-bar-mode) (tool-bar-mode -1))
@@ -12,3 +14,6 @@
 ;; This may cause a lot of network traffic for files on network mounts:
 ;; http://www.emacswiki.org/emacs/RevertBuffer#toc2
 (global-auto-revert-mode 1)
+
+(column-number-mode 1)
+
