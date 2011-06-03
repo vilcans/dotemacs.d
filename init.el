@@ -2,6 +2,9 @@
 (add-to-list 'auto-mode-alist '("\\.js\\'" . javascript-mode))
 (autoload 'javascript-mode "javascript" nil t)
 
+(autoload 'markdown-mode "markdown-mode.el" "Major mode for editing Markdown files" t)
+(setq auto-mode-alist (cons '("\\.markdown" . markdown-mode) auto-mode-alist))
+
 (setq-default indent-tabs-mode nil)
 (setq-default inhibit-startup-screen t)
 (if (boundp 'tool-bar-mode) (tool-bar-mode -1))
