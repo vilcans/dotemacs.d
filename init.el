@@ -18,4 +18,4 @@
 (global-auto-revert-mode 1)
 
 (column-number-mode 1)
-
+(setq make-backup-files nil) 
