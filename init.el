@@ -1,6 +1,11 @@
 (add-to-list 'load-path "~/.emacs.d/site-lisp/")
+
+;; JavaScript mode
 (add-to-list 'auto-mode-alist '("\\.js\\'" . javascript-mode))
 (autoload 'javascript-mode "javascript" nil t)
+(setq-default javascript-indent-level 2)
+
+;; Settings
 
 (setq-default sentence-end-double-space nil)
 
