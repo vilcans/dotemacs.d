@@ -7,6 +7,9 @@
 
 ;; Settings
 
+(autoload 'markdown-mode "markdown-mode.el" "Major mode for editing Markdown files" t)
+(setq auto-mode-alist (cons '("\\.markdown" . markdown-mode) auto-mode-alist))
+
 (setq-default sentence-end-double-space nil)
 
 (setq-default indent-tabs-mode nil)
